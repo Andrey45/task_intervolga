@@ -40,7 +40,7 @@ li:before{
   content: '+';
 }
 ```
-##### Ответ на Pug + Stylus
+##### Ответ на Pug + Stylus 
 ```jade
 ul
   li 1
@@ -77,7 +77,7 @@ $(document).ready(function(){
   $('#but').click(function(){
       $.ajax({
         type: 'GET',
-        url: 'https://new-goga-pizza.herokuapp.com/api/en/pizza',
+        url: 'https://new-goga-pizza.herokuapp.com/api/en/pizza', //https запрос к api моего проекта на heroku
         success: function(res){
             console.log(res)
         }
@@ -96,7 +96,7 @@ export default {
     methods:{
         get(){
             axios.GET('https://new-goga-pizza.herokuapp.com/api/en/pizza').then(res=>{
-                console.log(res)
+                console.log(res) //https запрос к api моего проекта на heroku
             })
         }
     }
